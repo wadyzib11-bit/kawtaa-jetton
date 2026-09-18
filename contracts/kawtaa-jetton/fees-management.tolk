@@ -1,0 +1,3 @@
+const MINIMAL_MESSAGE_VALUE_BOUND = grams("0.01")
+const MIN_GRAMS_FOR_STORAGE = grams("0.01")
+const JETTON_WALLET_GAS_CONSUMPTION = grams("0.015")

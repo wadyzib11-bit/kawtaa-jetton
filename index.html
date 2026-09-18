@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>KAWTAA — TON Jetton</title>
+
+<style>
+*{box-sizing:border-box}
+
+body{
+  margin:0;
+  min-height:100vh;
+  font-family:Arial,Helvetica,sans-serif;
+  background:
+    radial-gradient(circle at top,#302000 0%,#0b0b0b 45%,#050505 100%);
+  color:#fff;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  padding:24px;
+}
+
+.card{
+  width:100%;
+  max-width:720px;
+  text-align:center;
+  padding:42px 24px;
+  border:1px solid rgba(255,193,7,.25);
+  border-radius:28px;
+  background:rgba(15,15,15,.88);
+  box-shadow:0 20px 70px rgba(0,0,0,.55);
+}
+
+.logo{
+  width:130px;
+  height:130px;
+  object-fit:cover;
+  border-radius:50%;
+  border:3px solid #f5b800;
+  box-shadow:0 0 35px rgba(245,184,0,.35);
+}
+
+h1{
+  margin:22px 0 6px;
+  font-size:48px;
+  letter-spacing:4px;
+  color:#f5b800;
+}
+
+.subtitle{
+  color:#aaa;
+  font-size:17px;
+  margin-bottom:30px;
+}
+
+.grid{
+  display:grid;
+  grid-template-columns:repeat(2,1fr);
+  gap:14px;
+  margin:25px 0;
+}
+
+.info{
+  padding:18px;
+  border-radius:16px;
+  background:#171717;
+  border:1px solid #292929;
+}
+
+.label{
+  color:#888;
+  font-size:13px;
+  margin-bottom:7px;
+}
+
+.value{
+  font-size:20px;
+  font-weight:bold;
+}
+
+.buttons{
+  display:flex;
+  gap:12px;
+  justify-content:center;
+  flex-wrap:wrap;
+  margin-top:28px;
+}
+
+a{
+  text-decoration:none;
+  color:#111;
+  background:#f5b800;
+  padding:13px 22px;
+  border-radius:12px;
+  font-weight:bold;
+  transition:.2s;
+}
+
+a:hover{
+  transform:translateY(-2px);
+  box-shadow:0 8px 25px rgba(245,184,0,.25);
+}
+
+.secondary{
+  background:#202020;
+  color:#fff;
+  border:1px solid #333;
+}
+
+.footer{
+  margin-top:30px;
+  color:#666;
+  font-size:13px;
+}
+
+@media(max-width:500px){
+  h1{font-size:38px}
+  .grid{grid-template-columns:1fr}
+  .card{padding:34px 18px}
+}
+</style>
+</head>
+
+<body>
+
+<div class="card">
+
+  <img class="logo" src="metadata/kawtaa-logo.jpg" alt="KAWTAA Logo">
+
+  <h1>KAWTAA</h1>
+
+  <div class="subtitle">
+    The official token of the KAWTAA Telegram ecosystem
+  </div>
+
+  <div class="grid">
+
+    <div class="info">
+      <div class="label">Symbol</div>
+      <div class="value">KAWTAA</div>
+    </div>
+
+    <div class="info">
+      <div class="label">Network</div>
+      <div class="value">TON</div>
+    </div>
+
+    <div class="info">
+      <div class="label">Total Supply</div>
+      <div class="value">100 Billion</div>
+    </div>
+
+    <div class="info">
+      <div class="label">Decimals</div>
+      <div class="value">9</div>
+    </div>
+
+  </div>
+
+  <div class="buttons">
+    <a href="metadata/kawtaa.json">Token Metadata</a>
+    <a class="secondary"
+       href="https://github.com/wadyzib11-bit/kawtaa-jetton"
+       target="_blank">
+       GitHub
+    </a>
+  </div>
+
+  <div class="footer">
+    KAWTAA © 2026
+  </div>
+
+</div>
+
+</body>
+</html>
